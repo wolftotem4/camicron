@@ -1,0 +1,23 @@
+{
+  "name": "camicron",
+  "version": "1.0.0",
+  "description": "個人開發的疾管家QR掃碼加速版.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "wolftotem4",
+  "license": "MIT",
+  "devDependencies": {
+    "rqrr-wasm": "^0.0.8",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "zbar.wasm": "^2.1.1"
+  },
+  "sideEffects": [
+    "./src/app.ts"
+  ]
+}
